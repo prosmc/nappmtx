@@ -1,6 +1,6 @@
-# nappmtx
+# nappmtx-005
 
-nappmtx is a https server based on node and express for serving static files.
+nappmtx-005 is a recipe for a simple https server based on node and express for serving static files.
 
 PREREQUISITES
 ---
@@ -18,10 +18,10 @@ The following brief description explains how you can run nodflash
 
         $ cd $HOME
         $ git clone https://github.com/schneidermatix/nappmtx
-        $ cd $HOME/nappmtx
+        $ cd $HOME/nappmtx/nappmtx-005
         $ . ./.apprc
-        $ install
-        $ mkssl
+        $ x_inst
+        $ x_mkssl
 
 Static Files
 ---
@@ -33,9 +33,9 @@ Docker
 If everything is in place you can build the Docker image and run the Docker container with the following
 commands from the command line.
 
-        $ cd $HOME/nappmtx
-        $ build
-        $ serve
+        $ cd $HOME/nappmtx/nappmtx-005
+        $ x_build
+        $ x_serve
 
 After a successfull installation your files should be served by nappmtx and be available under the following url
 
