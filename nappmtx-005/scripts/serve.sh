@@ -52,7 +52,7 @@ HOSTNAME="lx1"
 ## SUB FUNCTION(S)
 ##----------------------------------------
 start() {
-   docker run -h $HOSTNAME -dit -p $NODEFLASH_PORT:$NODEFLASH_PORT -e GITHUB_CLIENT_ID="$GITHUB_CLIENT_ID" -e NODEFLASH_PORT="$NODEFLASH_PORT" -e GITHUB_CALLBACK_URL="$GITHUB_CALLBACK_URL" --name $NAME $IMAGE
+   docker run -h $HOSTNAME -dit -p $APP_PORT:$APP_PORT -e GITHUB_CLIENT_ID="$GITHUB_CLIENT_ID" -e APP_PORT="$APP_PORT" -e GITHUB_CALLBACK_URL="$GITHUB_CALLBACK_URL" --name $NAME $IMAGE
 }
 
 ##----------------------------------------

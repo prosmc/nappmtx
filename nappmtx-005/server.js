@@ -15,8 +15,8 @@ const default_log_level='error';
 var port;
 var log_level;
 
-(process.env.APP_PORT === null) ? port = default_port : port = process.env.NODEFLASH_PORT;
-(process.env.APP_LOG_LEVEL === null) ? log_level = default_log_level : log_level = process.env.NODEFLASH_LOG_LEVEL;
+(process.env.APP_PORT === null) ? port = default_port : port = process.env.APP_PORT;
+(process.env.APP_LOG_LEVEL === null) ? log_level = default_log_level : log_level = process.env.APP_LOG_LEVEL;
 
 var sslPath = path.resolve(__dirname, "ssl");
 var publicPath = path.resolve(__dirname, "public")
